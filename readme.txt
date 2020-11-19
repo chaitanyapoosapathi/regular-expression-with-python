@@ -1,8 +1,17 @@
-# code can be found in main.py file written in python3.x
-# writes out a text file(output.txt) with the score next to the file name
-# reads case-insensitive words(volDemont=VoldeMont) 
-# also reads any word that starts with "ki" and ends with "en"
+This program uses python Regular expressions that reads input files of potentially offensive text and writes to an output file with scores for each of the text files (details below).
 
-Assumptions
-# the challenge instructions didnt mention anything about reading phrases directly from high/low risk files, so i added those phrases into the code, the code would vary if it needs to read from a text file or so
-# since we are looking for a specific set of phrases i didnt make a function(def) for this code, it would be more realistic to have a function when we have a list of risk-phrases as input 
+
+There are two files with lists of offensive phrases. One file contains "low risk" phrases and the other, "high risk" phrases, one phrase per line. You are also given a set of 15 input files, each one containing some possibly offensive text that your program will score. The offensive score is defined as:
+
+
+(number of low risk phrases) + (number of high risk phrases * 2)
+
+
+The program writes out one output file containing the scores of each input file in order, in the format:
+
+
+<input-filename-1>:<score-1>
+
+<input-filename-2>:<score-2>
+
+...
