@@ -7,7 +7,7 @@ There are two files with lists of offensive phrases. One file contains "low risk
 (number of low risk phrases) + (number of high risk phrases * 2)
 
 
-The program writes out one output file containing the scores of each input file in order, in the format:
+The program(main.py) writes out one output.txt file containing the scores of each input file in order, in the format:
 
 
 <input-filename-1>:<score-1>
